@@ -1,0 +1,67 @@
+body{
+    overflow-x: hidden;
+}
+/* scroll */ 
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  ::-webkit-scrollbar-track {
+      background-color: black;
+  }
+
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #E53525; 
+  }
+
+  /* section */ 
+  .header{
+      height: 700px;
+      width: 100%;
+      background-image: url(../img/mora.jpg);
+      background-position: center;
+      background-size: cover;
+
+  }
+  .get{
+      width: 75%;
+      height: 400px;
+      box-shadow: black;
+      background-color: rgba(0, 0, 0, 0.39);
+      position: relative;
+      top: 30%;
+  }
+  .get a{
+      text-decoration: none;
+      color: #fff;
+  }
+  .get .btn-danger{
+      background-color: black;
+      width: 200px;
+      height: 40px;
+      border: none;
+      
+  }
+  .get .btn-danger:hover{
+    background-color: rgba(0, 0, 0, 0.856);
+  }
+
+  .scroll{
+      width: 100%;
+  
+      background-color: black;
+  }
+  h1{
+      color: #fff;
+  }
+  .audio{
+      z-index: -1;
+  }
+ .ss{
+     width: 300px;
+     height: 55px;
+     z-index: 1;
+     position: absolute;
+     background-color: black;
+ }

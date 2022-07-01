@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> The coolest </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- icon -->
+    <link rel="icon" href="./img/icon.png">
+
+    <!-- Font -->
+    <link rel="preconnect" href="">
+    <link href="" rel="stylesheet">
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="./style/fontawesome.css">
+    <!-- animaition loibrary  --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/bootstrap.css">
+    <!-- style-->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+<section class="header text-center  justify-content-start">
+    <div class="container get py-5">
+        <div class="row">
+            <div class="col-lg-12 my-5">
+                <div class="btn btn-danger my-5" onclick="f()">
+                    <a href="#scroll"> click here  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="scroll" style="background-color: black;" id="scroll">
+    
+    <div class="container ">
+        <div class="p-5"></div>
+        <div class="p-5"></div>
+     
+        <div class="row pt-5">
+            <div class="col-lg-6 ">
+                <div class="audio">
+                    <h1 id="scrollf"> listen to our song baby <br> i love you so much  </h1>
+                    <h2 class="bg-danger rounded p-3 text-light mt-5" style="line-height:45px ;">
+                        you are my best supporter , you're the great partner ever <br>
+                        i love you <br>
+                        thanks for beeing here <br>
+                        thanks for the hours <br>
+                        thanks for the days .
+                    </h2>
+                    <span class="ss"></span>
+                    <span class="audio pt-3">
+                    <audio id="myAudio" controls>
+                        <source src="/audio/yt1s.com - Bang Gang  Ghost From the Past Official Audio.mp3" type="audio/mpeg">
+                      </audio>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                
+                <img src="./img/icon.png" class="img-fluid w-75" alt="">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- jquery js -->
+<script src="js/./jquery-3.3.1.min.js"></script>
+<!-- bootstrap js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- js code -->
+<script>
+function f() {
+var audio=document.getElementById('myAudio');
+audio.play();
+}
+window.addEventListener('scroll',function() {
+            var div  = document.getElementById('myAudio'),
+                divPosition = div.getBoundingClientRect().top  ,
+                windowPosition = window.innerHeight;
+            if (divPosition < windowPosition){
+
+                div.play();
+            } 
+            
+
+        });
+</script>
+</body>
+
+</html>
